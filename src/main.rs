@@ -1,17 +1,13 @@
 fn main() {
-    let user1 = User {
-        email: String::from("info@mgcreations.co.za"),
-        username: String::from("MG Creations"),
-        active: true,
-        sign_in_count: 1,
-    };
+    let width1 = 30;
+    let height1 = 50;
 
-    println!("{:?}", user1);
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        area(width1, height1)
+    );
 }
 
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
+fn area(width: u32, height: u32) -> u32 {
+    width * height
 }
